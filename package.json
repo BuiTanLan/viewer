@@ -1,5 +1,5 @@
 {
-  "name": "angular-test-liveapp",
+  "name": "viewer",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -18,7 +18,11 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "@types/bcryptjs": "^2.4.2",
+    "bcryptjs": "^2.4.3",
+    "crypto-js": "^4.1.1",
     "rxjs": "~7.5.0",
+    "socket.io-client": "^4.5.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
@@ -26,7 +30,9 @@
     "@angular-devkit/build-angular": "^14.0.2",
     "@angular/cli": "~14.0.2",
     "@angular/compiler-cli": "^14.0.0",
+    "@types/crypto-js": "^4.1.1",
     "@types/jasmine": "~4.0.0",
+    "@types/node": "^18.8.3",
     "jasmine-core": "~4.1.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
@@ -34,5 +40,10 @@
     "karma-jasmine": "~5.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.7.2"
+  },
+  "browser": {
+    "crypto": false,
+    "util": false,
+    "fs": false
   }
 }
